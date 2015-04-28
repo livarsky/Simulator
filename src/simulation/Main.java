@@ -46,7 +46,7 @@ public class Main extends ApplicationFrame  {
 		for(double eps = 0.05; eps <= 1.5; eps += 0.05) {
 			double errs = s.simulate(100000, eps);
 			v32.add(eps, 1.0 - errs);
-			//System.out.println("v32: " + eps + ", " + (1.0 - errs));
+			System.out.println("v32: " + eps + ", " + (1.0 - errs));
 		}
 		
 		XYSeries v32bis = new XYSeries("V32bis");
@@ -55,7 +55,7 @@ public class Main extends ApplicationFrame  {
 		for(double eps = 0.05; eps <= 1.5; eps += 0.05) {
 			double errs = s.simulate(100000, eps);
 			v32bis.add(eps, 1.0 - errs);
-			//System.out.println("v32bis:" + eps + ", " + (1.0 - errs));
+			System.out.println("v32bis:" + eps + ", " + (1.0 - errs));
 		}
 		
 		XYSeriesCollection xyseriescollection = new XYSeriesCollection();
